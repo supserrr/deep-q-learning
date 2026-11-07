@@ -1,0 +1,13 @@
+[project]
+name = "deep-q-learning"
+version = "0.1.0"
+description = "Deep Q-Network trained from scratch with PyTorch to play Atari Pong"
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium[atari]>=1.4.0",
+    "imageio[ffmpeg]>=2.38.1",
+    "matplotlib>=3.11.2",
+    "opencv-python-headless>=5.0.0.93",
+    "pygame>=2.6.1",
+    "torch>=2.15.0",
+]
