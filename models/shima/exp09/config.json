@@ -1,0 +1,16 @@
+{
+  "member": "shima",
+  "name": "exp09",
+  "lr": 0.0001,
+  "gamma": 0.99,
+  "batch_size": 32,
+  "eps_start": 1.0,
+  "eps_end": 0.02,
+  "eps_decay": 30000,
+  "steps": 200000,
+  "buffer_size": 50000,
+  "learning_starts": 10000,
+  "train_freq": 1,
+  "target_update": 1000,
+  "seed": 42
+}
