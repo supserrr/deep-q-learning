@@ -29,7 +29,7 @@ The agent chooses actions epsilon-greedily and stores every step in a replay buf
 | Final training | 800,000 steps, average reward +19.9 over the last 10 games |
 | Evaluation (`play.py`) | won 3 of 3 games 21-0 |
 
-The training plot and what it shows are in [docs/results.md](docs/results.md). Each member's hyperparameter experiments have their own file ([Shima](results/Shima_Serein_Hyperparameter_experiment_results.md), [Gaddiel](results/Gaddiel_Irakoze_Hyperparameter_experiment_results.md)), with an overview in [docs/experiments.md](docs/experiments.md).
+The training plot and what it shows are in [docs/results.md](docs/results.md), which also explains [why we kept this configuration](docs/results.md#why-the-baseline-and-not-gaddiels-combination) although Gaddiel's combination scored higher at 200,000 steps. Each member's hyperparameter experiments have their own file ([Shima](results/Shima_Serein_Hyperparameter_experiment_results.md), [Gaddiel](results/Gaddiel_Irakoze_Hyperparameter_experiment_results.md)), with an overview in [docs/experiments.md](docs/experiments.md).
 
 ## Gameplay demonstration
 
