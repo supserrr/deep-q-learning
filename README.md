@@ -1,6 +1,6 @@
 # Deep Q-Learning: Atari Pong
 
-A Deep Q-Network written from scratch with PyTorch and Gymnasium that learns Atari Pong from screen pixels. After 800,000 training steps it beats the computer 21-0.
+A Deep Q-Network written from scratch with PyTorch and Gymnasium that learns Atari Pong from screen pixels. After 800,000 training steps it wins every game against the computer, most of them 21-0.
 
 ## Project
 
@@ -27,7 +27,7 @@ The agent chooses actions epsilon-greedily and stores every step in a replay buf
 |---|---|
 | Best configuration | learning rate 0.0001, gamma 0.99, batch 32, epsilon 1.0 to 0.02 over 100,000 steps |
 | Final training | 800,000 steps, average reward +19.9 over the last 10 games |
-| Evaluation (`play.py`) | won 3 of 3 games 21-0 |
+| Evaluation (`play.py`) | won all 10 games, average +20.7 (7 games 21-0, 3 games 21-1) |
 
 The training plot and what it shows are in [docs/results.md](docs/results.md), which also explains [why we kept this configuration](docs/results.md#why-the-baseline-and-not-gaddiels-combination) although Gaddiel's combination scored higher at 200,000 steps. Each member's hyperparameter experiments have their own file ([Shima](results/Shima_Serein_Hyperparameter_experiment_results.md), [Gaddiel](results/Gaddiel_Irakoze_Hyperparameter_experiment_results.md)), with an overview in [docs/experiments.md](docs/experiments.md).
 

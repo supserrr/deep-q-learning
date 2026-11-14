@@ -23,6 +23,6 @@ I started from a baseline and changed one hyperparameter at a time, so each resu
 
 The learning rate had the biggest effect: 0.0005 never learned, 0.000025 learned very slowly, and 0.0001 was clearly best. Gamma 0.99 beat 0.95 and 0.90, because Pong rewards arrive many steps after the shot that earns them and the agent has to value the future. The exploration schedule mattered less, but too much exploration late in training (epsilon end 0.10, or decay over 250k steps) cost points, while ending exploration early (30k) learned fastest at first. Batch size 64 was close to 32 and not worth the extra compute per step.
 
-For the final agent I trained the baseline (experiment 1) for 800,000 steps. It averaged +19.9 over its last 10 games and won 3 of 3 evaluation games 21-0 with `play.py`.
+For the final agent I trained the baseline (experiment 1) for 800,000 steps. It averaged +19.9 over its last 10 games and won all 10 evaluation games with `play.py`, averaging +20.7 (7 games 21-0, 3 games 21-1).
 
 Each experiment is a single run with seed 42, so differences of 1 to 2 points between runs can be noise.

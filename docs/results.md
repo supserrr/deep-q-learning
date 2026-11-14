@@ -23,7 +23,7 @@ The best experiment was the baseline (learning rate 0.0001, gamma 0.99, batch si
 
 ## Evaluation
 
-`play.py` always picks the action with the highest Q-value and makes no random moves. It won all 3 recorded games 21-0: [game 1](../videos/pong-dqn-episode-0.mp4), [game 2](../videos/pong-dqn-episode-1.mp4), [game 3](../videos/pong-dqn-episode-2.mp4).
+`play.py` always picks the action with the highest Q-value and makes no random moves. Over 10 games it won every one, averaging +20.7 (7 games 21-0 and 3 games 21-1). The 3 recorded games were all 21-0: [game 1](../videos/pong-dqn-episode-0.mp4), [game 2](../videos/pong-dqn-episode-1.mp4), [game 3](../videos/pong-dqn-episode-2.mp4).
 
 ## Why the baseline and not Gaddiel's combination
 
